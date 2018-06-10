@@ -1,0 +1,153 @@
+//VARIABLES
+$white: #ffffff;
+$green: #4caf50;
+
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+html,
+body {
+    height: 100vh;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+}
+
+.header{
+    height: 700px;
+	background-image: url('../../assets/img/bmw.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .overlay{
+		background: rgba(0, 0, 0, 0.45);
+		color: $white;
+		height: 100%;
+        width: 100%;
+        .overlay-text{
+            margin: 0 auto;
+            width: 70%;
+            position: relative;
+            top: 20%;
+            h3{
+                text-align: center;
+                font-size: 60px;
+            }
+            p{
+                text-align: center;
+                margin-top: 20px;
+                font-size: 25px;
+                font-weight: 600;
+                padding: 10px;
+            }
+            .form{
+                margin-top: 60px;
+                p{
+                    text-align: left;
+                }
+                input[type="text"]{
+                    padding: 20px;
+                    height: 60px;
+                    width: 70%;
+                    outline: none;
+                    border-radius: 5px;
+                    border: none;
+                    font-size: 15px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                input::placeholder{
+                        font-size: 15px;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                .button{
+                    margin-left: 10px;
+                    background: $green;
+                    width: 20%;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border:  none;
+                    color: $white;
+                    height: 60px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    outline: none;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                .button:hover{
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.65);
+                }
+            }
+        }
+	}
+    .navbar{
+        width: 80%;
+		margin: 0 auto;
+        padding: 25px 0px;
+        .nav-logo{
+            a{
+                color: $white;
+                font-weight: 600;
+                font-size:25px;
+            }
+            a:hover{
+                color: $green;
+            }
+        }
+    }
+}
+
+
+.check-cars{
+    margin: 0 auto;
+    width: 80%;
+    padding: 70px 0;
+    .text{
+        h3{
+            color: $green;
+            font-size: 50px;
+            padding: 30px  0;
+        }
+        
+    }
+}
