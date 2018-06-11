@@ -9,7 +9,9 @@ html {
 }
 
 html,
-body {
+body,
+#intro,
+.view {
   height: 100vh;
 }
 
@@ -46,111 +48,190 @@ a {
   outline: 0;
 }
 
-.header {
-  height: 700px;
-  background-image: url("../../assets/img/bmw.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
-.header .overlay {
-  background: rgba(0, 0, 0, 0.45);
-  color: #ffffff;
-  height: 100%;
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* For desktop: */
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
   width: 100%;
 }
 
-.header .overlay .overlay-text {
-  margin: 0 auto;
-  width: 70%;
-  position: relative;
-  top: 20%;
+.navbar {
+  box-shadow: none !important;
 }
 
-.header .overlay .overlay-text h3 {
-  text-align: center;
-  font-size: 60px;
+.navbar .navbar-brand {
+  font-weight: 400;
 }
 
-.header .overlay .overlay-text p {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 25px;
+.top-nav-collapse {
+  background: #333 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+  padding: 15px !important;
+}
+
+.nav-link {
+  font-size: 15px !important;
+}
+
+#intro {
+  background: url("../../assets/img/downtown.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 450px;
+}
+
+#intro .overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+#intro .overlay h3 {
   font-weight: 600;
-  padding: 10px;
+  font-size: 30px;
 }
 
-.header .overlay .overlay-text .form {
-  margin-top: 60px;
+#intro .overlay .form {
+  margin-top: 30px;
+  width: 100%;
 }
 
-.header .overlay .overlay-text .form p {
-  text-align: left;
+#intro .overlay .form .form-g {
+  margin-bottom: 20px;
 }
 
-.header .overlay .overlay-text .form input[type="text"] {
+#intro .overlay .form .form-g input[type="text"] {
   padding: 20px;
-  height: 60px;
+  font-size: 15px;
+  height: 45px;
   width: 70%;
-  outline: none;
-  border-radius: 5px;
+  outline: none !important;
   border: none;
-  font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.65);
 }
 
-.header .overlay .overlay-text .form input::placeholder {
-  font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
+#intro .overlay .form .form-g input[type="text"]::placeholder {
+  font-size: 13px !important;
 }
 
-.header .overlay .overlay-text .form .button {
-  margin-left: 10px;
+#intro .overlay .form .button {
   background: #4caf50;
-  width: 20%;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: none;
   color: #ffffff;
-  height: 60px;
-  border-radius: 5px;
+  padding-right: 35px;
+  padding-left: 35px;
   font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
+  height: 40px;
+  border: none;
   outline: none;
-  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
-.header .overlay .overlay-text .form .button:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.65);
+section {
+  padding: 35px 0;
 }
 
-.header .navbar {
-  width: 80%;
-  margin: 0 auto;
-  padding: 25px 0px;
+.how-it-works .row {
+  padding: 15px 0;
 }
 
-.header .navbar .nav-logo a {
-  color: #ffffff;
+.how-it-works h3 {
+  font-size: 20px;
   font-weight: 600;
-  font-size: 25px;
 }
 
-.header .navbar .nav-logo a:hover {
-  color: #4caf50;
+/*MOBILE*/
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #333 !important;
+    opacity: 0.7;
+  }
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .form .form-g input[type="text"] {
+    width: 100%;
+  }
 }
 
-.check-cars {
-  margin: 0 auto;
-  width: 80%;
-  padding: 70px 0;
-}
-
-.check-cars .text h3 {
-  color: #4caf50;
-  font-size: 50px;
-  padding: 30px  0;
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
