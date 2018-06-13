@@ -61,56 +61,7 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 80%;
-}
-
-/* For desktop: */
-.col-1 {
-  width: 8.33%;
-}
-
-.col-2 {
-  width: 16.66%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.33%;
-}
-
-.col-5 {
-  width: 41.66%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.33%;
-}
-
-.col-8 {
-  width: 66.66%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.33%;
-}
-
-.col-11 {
-  width: 91.66%;
-}
-
-.col-12 {
-  width: 100%;
+  width: 90%;
 }
 
 .navbar {
@@ -142,7 +93,7 @@ a {
   -o-background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 450px;
+  height: 500px;
 }
 
 #intro .overlay {
@@ -167,14 +118,14 @@ a {
 }
 
 #intro .overlay .form .form-g {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 #intro .overlay .form .form-g input[type="text"] {
   padding: 20px;
   font-size: 15px;
   height: 45px;
-  width: 70%;
+  width: 90%;
   outline: none !important;
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.65);
@@ -198,6 +149,10 @@ a {
   cursor: pointer;
 }
 
+#intro .overlay .form .button a {
+  color: #ffffff !important;
+}
+
 section {
   padding: 35px 0;
 }
@@ -209,6 +164,11 @@ section {
 .how-it-works h3 {
   font-size: 20px;
   font-weight: 600;
+}
+
+.how-it-works .fa-check-circle {
+  font-size: 30px !important;
+  color: #b73acd;
 }
 
 /*MOBILE*/

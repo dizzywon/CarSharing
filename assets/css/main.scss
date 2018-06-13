@@ -1,0 +1,88 @@
+#intro {
+    background: lightgrey;
+    height: 280px;
+}
+
+.ride-results{
+    h3{
+        font-size:20px;
+        font-weight: 600;
+    }
+    p{
+        margin-top: 20px;
+        font-size:15px;
+        color: lightgrey;
+    }
+    .card{
+        height: 160px;
+        width: 100%;
+        border-radius: 3px !important;
+        .avatar{
+            .rounded-circle{
+            height:80px;
+            width:80px;
+            }
+            .text{
+                p{
+                    color: black;
+                    font-size:12px;
+                }
+                .mt-1{
+                    font-weight:600;
+                }
+            }
+        }
+        .time{
+            p{
+                color: black;
+                font-size: 12px;
+            }
+        }
+        
+    }
+    .cost{
+        p{
+            color: black;
+            font-size:10px;
+            b{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+        .button{
+            background: #b73acd;
+            color: #fff;
+            padding-right: 35px;
+            padding-left: 35px;
+            font-size:10px;
+            height:40px;
+            border: none;
+            outline: none;
+            text-align: center;
+            border-radius: 30px;
+            cursor: pointer;
+           
+        }
+        
+        .button:hover{
+            background: #9c32ae;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, .45);
+        }
+    }
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: transparent !important;
+    }
+    .card{
+        width: 100%;
+        .time{
+            p{
+                color: black;
+                font-size: 10px;
+            }
+        }
+    } 
+}
